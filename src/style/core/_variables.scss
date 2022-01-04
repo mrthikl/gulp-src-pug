@@ -1,0 +1,90 @@
+//======================================================BOXED LAYOUT=======================================================
+
+$container-max-width: 100%;
+$container-width: 1010px; // tùy thuộc vào container của bản thiết kế // $container-width = container (đo từ bản thiết kế) + 30px
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$xs-min: 768px; // KHÔNG THAY ĐỔI
+$sm-min: 992px; // KHÔNG THAY ĐỔI
+$md-min: 1200px; // KHÔNG THAY ĐỔI
+$lg-min: 1600px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 1); // Small Mobile
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Tablet
+$md-max: ($md-min - 1); // Desktop
+$lg-max: ($lg-min - 1); // Large Desktop
+
+//=====================================CÁC BIẾN KHÔNG THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE======================================
+// colors - tuỳ chỉnh
+$black-cl: #000;
+$dark-cl: #202124;
+$dark-2-cl: rgb(95, 99, 104);
+$dark-3-cl: rgba(0, 0, 0, 0.7);
+$grey-cl: rgba(0, 0, 0, 0.5);
+$grey-2-cl: rgb(232, 234, 237);
+$grey-3-cl: rgb(241, 243, 244);
+$grey-4-cl: rgb(222, 223, 224);
+$white-cl: #fff;
+$blue-cl: #30c3ff;
+$pink-cl: #ff385c;
+$gradient-cl: linear-gradient(180deg, #df1cff 0%, #814bf6 50.55%, #00bcff 100%);
+
+// timing transition - tuỳ chỉnh
+$t: 0.3s;
+
+// ========================================CÁC BIẾN CÓ THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE=====================================
+
+:root {
+  //=========== VÍ DỤ ============//
+
+  // font-size & line-height heading
+
+  --h1-fs: 3.6rem;
+  --h1-lh: 4.4rem;
+
+  --h2-fs: 4rem;
+  --h2-lh: 5rem;
+
+  --h3-fs: 2.4rem;
+  --h3-lh: 3.4rem;
+
+  --h4-fs: 2.4rem;
+  --h4-lh: 3.4rem;
+
+  --h5-fs: 1.8rem;
+  --h5-lh: 2.5rem;
+
+  --body-fs: 1.6rem;
+  --body-lh: 2.4rem;
+
+  --t14-fs: 1.4rem;
+  --t14-lh: 2.4rem;
+
+  --t12-fs: 1.2rem;
+  --t12-lh: 2.2rem;
+
+  // Genaral Variable
+
+  --gap: 30px;
+  --height-header: 64px;
+  --width-navigation: 256px;
+  --pdss: 64px;
+  @media (max-width: $md-max) {
+    --width-navigation: 68px;
+  }
+  @media (max-width: $sm-max) {
+    --h2-fs: 3.2rem;
+    --h2-lh: 4.2rem;
+
+    --h4-fs: 2rem;
+    --h4-lh: 3rem;
+  }
+  @media (max-width: $xs-max) {
+  }
+  @media (max-width: $xxs-max) {
+    --gap: 15px;
+    --width-navigation: 256px;
+  }
+}

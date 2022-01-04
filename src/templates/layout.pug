@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='shortcut icon' href='./img/assets/favicon.ico' type='image/x-icon')
+        title Kaggle Competitions
+        meta(name='title' content='Kaggle Competitions')
+        meta(name='description' content='Kaggle is the world’s largest data science community with powerful tools and resources to help you achieve your data science goals.')
+        meta(name='keywords' content='Kaggle is the world’s largest data science community with powerful tools and resources to help you achieve your data science goals.')
+        // SEO Tags : FB OpenGraph
+        meta(property='og:image' content='./img/assets/favicon.ico')
+        meta(property='og:title' content='Kaggle Competitions')
+        meta(property='og:url' content='https://Kaggle.com/')
+        meta(property='og:site_name' content='Kaggle Competitions')
+        meta(property='og:type' content='website')
+        meta(property='og:description' content='Kaggle is the world’s largest data science community with powerful tools and resources to help you achieve your data science goals.')
+        meta(property='og:locale' content='vi_VN')
+        meta(property='og:keywords' content='Kaggle is the world’s largest data science community with powerful tools and resources to help you achieve your data science goals.')
+        // SEO Tags : Twitter
+        meta(name='twitter:card' content='summary')
+        meta(name='twitter:site' content='@suo')
+        meta(name='twitter:creator' content='@suo')
+        //- LINK
+        link(rel='stylesheet' href='css/index.css')                     
+          
+    body 
+        include header
+        block content
+        include footer
+
+        //- SCRIPT
+        script(src='js/main.min.js')
+        script(src='js/index.js')  
